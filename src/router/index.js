@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import Me from '@/page/Me.vue';
 import Message from '@/page/Message.vue';
 import PatientList from '@/page/PatientList.vue';
+import PatientDetail from '@/page/PatientDetail.vue';
 
 Vue.use(Router);
 
@@ -15,19 +16,24 @@ export default new Router({
       component: HelloWorld
     },
     {
-      path:"/me",
-      name:"Me",
-      component:Me
+      path: "/me",
+      name: "Me",
+      component: Me
     },
     {
-      path:"/message",
-      name:"Message",
-      component:Message
+      path: "/message",
+      name: "Message",
+      component: Message
     },
     {
-      path:"/patientlist",
-      name:"PatientList",
-      component:PatientList
+      path: "/patientlist",
+      name: "PatientList",
+      component: PatientList
+    },
+    {
+      path: "/patientDetail",
+      name: "PatientDetail",
+      component: PatientDetail
     }
   ]
 })
