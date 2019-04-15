@@ -2,6 +2,42 @@
   <div class="message">
     <box gap="10px 10px">
       <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
+      <x-button :link="link">确定</x-button>
     </box>
   </div>
 </template>
