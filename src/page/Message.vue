@@ -1,66 +1,40 @@
 <template>
   <div class="message">
     <box gap="10px 10px">
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
-      <x-button :link="link">确定</x-button>
+      <card v-for="(patientInfo,index) in patientList" :key="index">
+        <div slot="header" class="header">
+        
+        </div>
+        <div slot="content" class="content">
+        
+        </div>
+        <div slot="footer" class="footer">
+        
+        </div>
+      </card>
     </box>
   </div>
 </template>
 
 <script>
-  import XButton from "vux/src/components/x-button/index";
-  import Box from "vux/src/components/box/index";
+  import {Box, XButton, Card} from 'vux';
   
   export default {
     name: "Message",
-    components: {Box, XButton},
+    components: {Box, XButton, Card},
     data() {
       return {
-        link: "/patientDetail"
+        data: []
+      }
+    },
+    computed: {
+      patientList() {
+        return this.data;
       }
     },
   }
 </script>
 
 <style scoped>
-  .message {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-  }
+
 </style>

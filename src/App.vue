@@ -53,32 +53,40 @@
 
 <style lang="less">
   @import '~vux/src/styles/reset.less';
-
-  .app{
+  
+  
+  .app {
     position: relative;
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
   }
   
-  .header{
+  .footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 100;
+  }
+  
+  .main {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 60px;
     width: 100%;
-  }
-  
-  .main{
-  
-  }
-  
-  .footer{
-    position: fixed;
-    bottom: 0;
     left: 0;
     right: 0;
   }
-  
 </style>
