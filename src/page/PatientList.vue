@@ -11,7 +11,7 @@
 </template>
 
 <script>
-  import Card from "vux/src/components/card/index";
+  import {Card} from 'vux';
 
   export default {
     name: "PatientList",

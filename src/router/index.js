@@ -5,6 +5,7 @@ import Me from '@/page/Me.vue';
 import Message from '@/page/Message.vue';
 import PatientList from '@/page/PatientList.vue';
 import PatientDetail from '@/page/PatientDetail.vue';
+import ListPage from '@/page/ListPage.vue';
 
 Vue.use(Router);
 
@@ -34,6 +35,11 @@ export default new Router({
       path: "/patientDetail",
       name: "PatientDetail",
       component: PatientDetail
+    },
+    {
+      path: "/listPage",
+      name: "ListPage",
+      component: ListPage
     }
   ]
 })
