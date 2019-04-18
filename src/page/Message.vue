@@ -1,20 +1,18 @@
 <template>
   <div class="message">
-    <ul>
-      <li v-for="(patientInfo,index) in changePatientList" :key="index">
-        <card>
-          <div slot="header" class="header">
-            <span>{{patientInfo.Name}}</span>
-          </div>
-          <div slot="content" class="content">
-          
-          </div>
-          <div slot="footer" class="footer">
-          
-          </div>
-        </card>
-      </li>
-    </ul>
+    <box gap="10px 10px">
+      <card v-for="(patientInfo,index) in patientList" :key="index">
+        <div slot="header" class="header">
+        
+        </div>
+        <div slot="content" class="content">
+        
+        </div>
+        <div slot="footer" class="footer">
+        
+        </div>
+      </card>
+    </box>
   </div>
 </template>
 

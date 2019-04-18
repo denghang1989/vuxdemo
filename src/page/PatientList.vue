@@ -3,7 +3,7 @@
     <ul class="list">
       <li class="item" v-for="(item ,index) in changePatientList" :key="index">
         <card>
-        
+
         </card>
       </li>
     </ul>
@@ -11,8 +11,8 @@
 </template>
 
 <script>
-  import Card from "vux/src/components/card/index";
-  
+  import {Card} from 'vux';
+
   export default {
     name: "PatientList",
     components: {Card},
@@ -50,12 +50,12 @@
     justify-content: space-around;
     align-items: flex-start;
   }
-  
+
   .item {
     padding: 0;
     margin: 0;
   }
-  
+
   .item a {
     text-decoration: none;
   }
