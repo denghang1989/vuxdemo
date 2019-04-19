@@ -1,14 +1,14 @@
 <template>
   <div id="app">
     <header class="header">
-      <x-header title="张晓敏 13床"></x-header>
+      <x-header :title="title"></x-header>
     </header>
     <main class="main">
       <router-view/>
     </main>
     <footer class="footer">
       <tabbar class="tabbar">
-        <tabbar-item v-for="(item,index) in tabbarData" :key="index" :link="item.link">
+        <tabbar-item v-for="(item,index) in tabbarData" :key="index" :link="item.link" :selected="index===0">
           <img :src="item.icon" alt="" slot="icon">
           <img :src="item.iconActive" alt="" slot="icon-active">
           <span slot="label">{{item.label}}</span>
@@ -20,6 +20,7 @@
 
 <script>
   import {Tabbar, TabbarItem, XHeader} from 'vux'
+  import {eventBus} from './utils/eventBus';
   
   export default {
     name: 'App',
@@ -45,9 +46,16 @@
             label: "我的",
             link: "/me"
           }
-        ]
+        ],
+        title: "张晓敏 13床"
       }
     },
+    mounted() {
+      eventBus.$on("itemOnClickListener", function (patientInfo, index) {
+        console.log(patientInfo.Name + " " + patientInfo.BedNo);
+        this.title = patientInfo.Name + " " + patientInfo.BedNo;
+      })
+    }
   }
 </script>
 
